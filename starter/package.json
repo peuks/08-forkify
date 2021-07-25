@@ -4,7 +4,8 @@
   "description": "Recipe application",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/peuks/08-forkify/issues"
   },
-  "homepage": "https://github.com/peuks/08-forkify#readme"
+  "homepage": "https://github.com/peuks/08-forkify#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "sass": "^1.36.0"
+  }
 }
