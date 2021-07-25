@@ -1,8 +1,13 @@
-const recipeContainer = document.querySelector('.recipe');
+const recipeContainer = document.querySelector(".recipe");
 
+/**
+ *
+ * @param {*} s
+ * @returns
+ */
 const timeout = function (s) {
   return new Promise(function (_, reject) {
-    setTimeout(function () {
+    setTimeout(() => {
       reject(new Error(`Request took too long! Timeout after ${s} second`));
     }, s * 1000);
   });
